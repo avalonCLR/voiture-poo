@@ -2,7 +2,11 @@ package voiture;
 
 public class Voiture {
 
+	//attributs de l'objet
 	String marque;
+	
+	
+
 	double vitesse;
 	int puissance;
 	
@@ -12,8 +16,8 @@ public class Voiture {
 		this.puissance = puissance;
 	}
 	
-	public String voitureToString() {
-		return "Marque "+marque+" Vitesse "+vitesse+" Puissance "+puissance;
+	@Override
+	public String toString() {
+		return "Voiture [marque=" + marque + ", vitesse=" + vitesse + ", puissance=" + puissance + "]";
 	}
-	
 }

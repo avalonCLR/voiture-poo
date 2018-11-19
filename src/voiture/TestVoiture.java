@@ -10,13 +10,12 @@ public class TestVoiture {
 		
 		Voiture[] voitures = {v1, v2, v3};
 
-		int nbVoiture=0;
-		
-		for(int i =0; i<voitures.length; i++) {
-			System.out.println(voitures[i].voitureToString());
-			nbVoiture++;
+		//for remplaçé par un foreach
+		for (Voiture v : voitures) {
+			System.out.println(v.toString());
 		}
-		System.out.println("Le nombre de voitures est : "+nbVoiture);
+		
+		System.out.println("Le nombre de voitures est : "+voitures.length);
 	}
 
 }
